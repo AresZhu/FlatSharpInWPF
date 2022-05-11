@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <FlatSharpSchema Include="*.fbs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FlatSharp" Version="6.3.1" />
+    <PackageReference Include="FlatSharp.Compiler" Version="6.3.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="FlatSharp.Runtime" Version="6.3.1" />
+  </ItemGroup>
+
+</Project>

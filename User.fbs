@@ -1,0 +1,6 @@
+﻿namespace FlatSharpInWPF.Models;
+
+table User {    
+    Name: string;
+    HashedPassword: string;
+}
